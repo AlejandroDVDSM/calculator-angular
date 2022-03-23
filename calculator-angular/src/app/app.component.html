@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+
+<form>
+Text1: <input type="text" [(ngModel)]="text1" name="text1"> &nbsp;
+Text2: <input type="text" [(ngModel)]="text2" name="text2"><br/><br/>
+Num1: <input type="number" [(ngModel)]="num1" name="num1"> &nbsp;
+Num2: <input type="number" [(ngModel)]="num2" name="num2"><br/><br/>
+<br/>
+<input type="submit" value="Concatenate" (click)="concatenate()">&nbsp;
+<input type="submit" value="Upper" (click)="upper()">&nbsp;
+<input type="submit" value="Lower" (click)="lower()">&nbsp;
+<input type="submit" value="Find" (click)="find()">&nbsp;
+<input type="submit" value="Slice" (click)="slice()">&nbsp;
+<input type="submit" value="Length" (click)="length()">&nbsp;
+<input type="submit" value="Include" (click)="include()">&nbsp;
+<input type="submit" value="Split" (click)="split()"><br/>
+<br/>
+<p>Result: {{result}}</p>
+</form>
