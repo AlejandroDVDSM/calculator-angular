@@ -51,18 +51,18 @@ Num2: <input type="number" [(ngModel)]="num2" name="num2"><br/><br/>
             </div>
             
             <div class="second-column_first-row">
+                <button (click)="buildOperation('Delete')">Del</button>
+                <button (click)="buildOperation('Clear')">Clear</button>
+            </div>
+            
+            <div class="second-column_second-row">
                 <button (click)="buildOperation('*')">*</button>
                 <button (click)="buildOperation('/')">/</button>
             </div>
-    
-            <div class="second-column_second-row">
+            
+            <div class="second-column_third-row">
                 <button (click)="buildOperation('+')">+</button>
                 <button (click)="buildOperation('-')">-</button>
-            </div>
-    
-            <div class="second-column_third-row">
-                <button (click)="buildOperation('Delete')">Del</button>
-                <button (click)="buildOperation('Clear')">Clear</button>
             </div>
         </div>
     </section>

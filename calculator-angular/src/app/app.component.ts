@@ -28,7 +28,7 @@ export class AppComponent {
     try {
       this.operation = eval(this.operation);
     } catch (exception) {
-      this.operation = "SyntaxError ..."
+      this.operation = "SyntaxError ...";
       setTimeout(() => {this.operation = ""}, 2000);
     }
   }
