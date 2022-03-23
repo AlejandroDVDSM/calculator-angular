@@ -1,0 +1,37 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 5em;
+    width: 5em;
+}
+
+.operation {
+    font-size: x-large;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.second-column_first-row {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.second-column_second-row {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.second-column_third-row {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}

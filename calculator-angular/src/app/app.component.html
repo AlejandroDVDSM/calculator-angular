@@ -1,6 +1,5 @@
-<h1>{{title}}</h1>
-
-<form>
+<!-- 
+    <form>
 Text1: <input type="text" [(ngModel)]="text1" name="text1"> &nbsp;
 Text2: <input type="text" [(ngModel)]="text2" name="text2"><br/><br/>
 Num1: <input type="number" [(ngModel)]="num1" name="num1"> &nbsp;
@@ -16,4 +15,55 @@ Num2: <input type="number" [(ngModel)]="num2" name="num2"><br/><br/>
 <input type="submit" value="Split" (click)="split()"><br/>
 <br/>
 <p>Result: {{result}}</p>
-</form>
+</form> -->
+
+<main>
+    <h1>{{title}}</h1>
+    
+    
+    <label class="operation">Operation: </label>
+    <input type="text" [(ngModel)]="operation" class="operation" disabled>
+
+    <section>
+        <div class="calculator-container">
+            <div>
+                <button (click)="buildOperation('7')">7</button>
+                <button (click)="buildOperation('8')">8</button>
+                <button (click)="buildOperation('9')">9</button>
+            </div>
+            
+            <div>
+                <button (click)="buildOperation('6')">6</button>
+                <button (click)="buildOperation('5')">5</button>
+                <button (click)="buildOperation('4')">4</button>            
+            </div>
+            
+            <div>
+                <button (click)="buildOperation('3')">3</button>
+                <button (click)="buildOperation('2')">2</button>
+                <button (click)="buildOperation('1')">1</button>    
+            </div>
+            
+            <div>
+                <button (click)="buildOperation('0')">0</button>
+                <button (click)="buildOperation('.')">.</button>
+                <button (click)="solve()">=</button>
+            </div>
+            
+            <div class="second-column_first-row">
+                <button (click)="buildOperation('*')">*</button>
+                <button (click)="buildOperation('/')">/</button>
+            </div>
+    
+            <div class="second-column_second-row">
+                <button (click)="buildOperation('+')">+</button>
+                <button (click)="buildOperation('-')">-</button>
+            </div>
+    
+            <div class="second-column_third-row">
+                <button (click)="buildOperation('Delete')">Del</button>
+                <button (click)="buildOperation('Clear')">Clear</button>
+            </div>
+        </div>
+    </section>
+</main>
