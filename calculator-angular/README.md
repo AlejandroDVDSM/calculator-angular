@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
+CalculatorAngular is an implementation of the most basic calculator operations (addition, subtraction, multiplication and division) with the possibility of deleting the input or removing a character.
+
+The link to the deployment of the application is the next: [https://thriving-puppy-c84863.netlify.app](https://thriving-puppy-c84863.netlify.app).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
